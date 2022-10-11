@@ -1,0 +1,134 @@
+html {
+    /* font-family: "游ゴシック体","YuGothic","ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","MS Ｐゴシック","MS Pgothic",sans-serif; */
+    font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+    font-size: 14px;
+    word-spacing: 1px;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+.valkyries {
+    width: 100%;
+    height: auto;
+    background: url(../img/valkyries/val-bg.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 65px 0 40px;
+}
+
+.valkyries-title {
+    font-size: 48px;
+    height: 50px;
+    font-weight: bold;
+    color: #96dbff;
+    text-align: center;
+    padding: 50px 0;
+    background: url(../img/valkyries/val-title.png) center bottom no-repeat;
+    background-size: 1280px 28px;
+    margin-bottom: 60px;
+}
+.valkyries-title span{
+    display: inline-block;
+    transform: skew(-11deg);
+    font-size: 40px;
+    margin-left: -15px;
+    color: #fff;
+}
+.valkyries-wrap {
+    border: 2px solid rgba(255,255,255,.1);
+    border-radius: 10px;
+    width: 1246px;
+    margin: 0 auto;
+    padding: 20px 20px 0;
+}
+/* .valkyries-list {
+
+} */
+
+/* .valkyries-item {
+
+} */
+.valkyries-item-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.valkyries-item-title span:first-child {
+    font-size: 30px;
+    color: #fff;
+    transform: skew(-11deg);
+    font-weight: bold;
+    flex-shrink: 0;
+}
+.valkyries-item-title span:last-child {
+    font-size: 26px;
+    opacity: .5;
+    font-weight: 400;
+    font-family: Impact,sans-serif;
+    color: #fff;
+    transform: skew(-11deg);
+    font-weight: bold;
+    flex-shrink: 0;
+}
+.valkyries-item-title .role-line {
+    flex: 1;
+    height: 3px;
+    background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent);
+
+}
+.roles {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.roles a {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.base-role-btn {
+    width: 114px;
+    height: 100%;
+    min-height: 140px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 6px;
+    padding-right: 1px;
+    cursor: pointer;
+    position: relative;
+    background: #fff;
+    background-size: 100% 100%;
+    transform: skew(-15deg);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.base-role-btn:hover {
+    background: #fedf4c;
+}
+.imgbox {
+    position: relative;
+    z-index: 2;
+    width: 142px;
+    transform: skew(15deg) translateX(-14px);
+}
+.imgbox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 113px;
+    height: 100%;
+    margin-left: 14px;
+    background: #fff;
+    background-size: 100% 100%;
+    transform: skew(-15deg);
+    border-radius: 12px;
+}
+.base-role-btn img {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}

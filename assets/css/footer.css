@@ -1,0 +1,167 @@
+html {
+    /* font-family: "游ゴシック体","YuGothic","ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","MS Ｐゴシック","MS Pgothic",sans-serif; */
+    font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+    font-size: 14px;
+    word-spacing: 1px;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+/* footer  */
+.footer-wrap {
+    position: relative;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 0 40px;
+}
+.main {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: -10px 0;
+}
+.logo, .infomation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 10px 0;
+}
+.logo a {
+    margin: 6px;
+    color: #bbb;
+    background-color: transparent;
+    max-width: fit-content;
+    height: 67px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.logo a img {
+    width: auto;
+    height: 100%;
+    display: block;
+    border-style: none;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+.infomation .content {
+    margin: -10px;
+
+}
+.content a {
+    margin: 10px;
+    color: #bbb;
+    background-color: transparent;
+    cursor: pointer;
+    max-width: calc(100% - 10px);
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.main p {
+    color: #919191;
+    text-align: center;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+.logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 10px 0;
+}
+.logo-footer a {
+    width: fit-content;
+    height: 57px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    color: inherit;
+}
+.logo-footer a img {
+    width: auto;
+    height: 100%;
+    display: block;
+    border-style: none;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+.copyright {
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+
+
+/* modal............................ */
+.modal-overlay {
+    display: none;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    /* background: rgba(0, 0, 0, 0.2); */
+    z-index: 999;
+    opacity: 1;
+}
+.modal-background-click {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+.modal-top-right {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modal-box {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.modal {
+    background-color: white;
+    text-align: left;
+    border-radius: 3px;
+    box-shadow: 0 20px 60px -2px rgb(27 33 58 / 40%);
+    padding: 0;
+}
+.video-modal-content {
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    border: 1px solid #56c0f7;
+    overflow: hidden;
+    background: #fff;
+}
+.video-close {
+    position: absolute;
+    right: -1px;
+    top: -2px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/video-close.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 99;
+}
+.video-modal-content video {
+    background: #000;
+    width: 100%;
+    height: 100%;
+    display: block;
+}

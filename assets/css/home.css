@@ -1,0 +1,1069 @@
+html {
+    /* font-family: "游ゴシック体","YuGothic","ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","MS Ｐゴシック","MS Pgothic",sans-serif; */
+    font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+    font-size: 14px;
+    word-spacing: 1px;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+.page {
+    background-color: #299ee6;
+
+}
+
+.page-banner {
+    height: 1386px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-banner-bg {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    object-fit: fill;
+    pointer-events: none;
+}
+
+.page-banner .logo {
+    position: absolute;
+    top: 112px;
+    left: 50%;
+    margin-left: 356px;
+    width: 250px;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+}
+
+/* dowdload */
+
+.page-banner .download {
+    position: absolute;
+    left: 50%;
+    bottom: 430px;
+    transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.page-banner .download .pv {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 5px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.page-banner .download .pv video {
+    width: 240px;
+    height: 130px;
+    opacity: .8;
+    object-fit: fill;
+    pointer-events: none;
+}
+
+.page-banner .download .pv-video-btn {
+    position: absolute;
+    width: 65px;
+    height: 87px;
+    background: url(../img/video-btn.png) no-repeat;
+    background-size: 100% 100%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    cursor: pointer;
+}
+
+.page-banner .download .pv-video-btn:hover {
+    background: url(../img/video-btn-hover.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* boxxxxxxxxxxxxxxxxxx */
+
+.page-banner .download .download-box {
+    background: rgba(255, 255, 255, .85);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 2px 10px 0 rgb(1 1 1 / 30%);
+    border-radius: 5px;
+    height: 140px;
+    width: 390px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.page-banner .download .download-box .qr {
+    width: 129px;
+    margin-left: 24px;
+    position: relative;
+}
+
+.page-banner .download .download-box .qr .qrimg {
+    position: relative;
+    width: 150px;
+    padding-top: 4px;
+    margin-left: -10px;
+}
+
+.page-banner .download .download-box .qr img {
+    width: 100%;
+}
+
+.page-banner .download .download-box .qr .qr-line {
+    width: 114px;
+    height: 8px;
+    position: absolute;
+    background: url(../img/line.png) no-repeat;
+    left: 24px;
+    top: 5px;
+    animation: scan 3s infinite linear alternate;
+}
+
+@keyframes scan {
+    from {
+        top: 10%;
+    }
+
+    to {
+        top: 86%;
+    }
+}
+
+.page-banner .download .download-box .download-btns {
+    padding-top: 8px;
+}
+
+.page-banner .download .download-box .download-btns a {
+    width: 193px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.page-banner .download .download-box .download-btns a img {
+    display: block;
+    /* width: 28px; */
+    /* margin-right: 12px; */
+    width: 100%;
+}
+
+/* newssssssssssssssss */
+.page-banner .news {
+    width: 1246px;
+    height: 326px;
+    position: absolute;
+    bottom: 54px;
+    left: 50%;
+    margin-left: -632px;
+    background: url(../img/honenewsbg.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 20px 40px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-swiper {
+    width: 640px;
+    height: 280px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 290px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+}
+
+.swiper-slide {
+    height: 280px;
+    border-radius: 5px;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+    transform: 2s;
+    /* transition-duration: 200ms transform linear; */
+    transform: translate3d(0px, 0, 0);
+}
+
+.news-swiper-item {
+    display: block;
+}
+
+.news-swiper-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination {
+    position: absolute;
+    z-index: 10;
+    /* transition: 300ms opacity; */
+    text-align: center;
+    background: #fff;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 10px;
+    width: auto;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    padding: 0 12px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: url(../img/bullet.png) no-repeat;
+    margin: 0 4px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 100%;
+    opacity: 0.2;
+}
+
+.swiper-pagination-bullet.active {
+    background: url(../img/bullet-ac.png) no-repeat;
+    opacity: 1;
+}
+
+.home-news-list {
+    width: 530px;
+}
+
+.cates {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.cates .cate {
+    width: 129px;
+    height: 40px;
+    background-color: #0097de;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 6px;
+    transform: skew(-20deg);
+    margin-right: 5px;
+}
+
+.cates .cate span {
+    display: inline-block;
+    transform: skew(20deg);
+}
+
+.cates .cate:hover {
+    background: #33cbff;
+}
+
+.cates .cate.active {
+    color: #0097de;
+    background: #fff;
+}
+
+.home-news-content {
+    height: 180px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    display: none;
+}
+
+.home-news-content.active {
+    display: block;
+}
+
+.home-news-content-item {
+    height: 45px;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    cursor: pointer;
+    color: #fff;
+}
+
+.home-news-content-item:hover span:first-child {
+    color: #fedf4c;
+}
+
+.home-news-content-item span:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.home-news-content-item span:last-child {
+    flex-shrink: 0;
+    margin-left: 10px;
+}
+
+.more {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.more-btn {
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #fedf4c;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    cursor: pointer;
+}
+
+.roles {
+    height: 975px;
+    background: url(../img/rolr-bg.jpg) center center no-repeat;
+    overflow: hidden;
+}
+
+.roles-wrapper {
+    width: 1246px;
+    margin: 0 auto 16px;
+    position: relative;
+    height: calc(100% - 16px);
+}
+
+.big-img {
+    position: absolute;
+    bottom: 0;
+    left: -130px;
+    width: 960px;
+}
+
+.big-img img {
+    width: 100%;
+    display: block;
+}
+
+.role-info {
+    position: absolute;
+    width: 660px;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.role-info-title {
+    font-size: 40px;
+    font-weight: bold;
+    transform: skew(-11deg);
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.role-info-title h2 {
+    margin-bottom: 10px;
+}
+
+.role-info-title p {
+    font-size: 30px;
+    color: #62eaf5;
+}
+
+.role-info-weapon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+    width: 471px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.role-info-weapon>div:first-child {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+}
+
+.role-info-weapon>div:first-child div {
+    padding: 10px 0;
+}
+
+.role-info-weapon>div:first-child div:last-child {
+    width: 220px;
+}
+
+.role-info-weapon .weapon-video {
+    position: relative;
+    height: 135px;
+}
+
+.role-info-weapon .weapon-video img {
+    height: 100%;
+}
+
+.weapon-video-btn {
+    position: absolute;
+    width: 65px;
+    height: 87px;
+    background: url(../img/video-btn.png) no-repeat;
+    background-size: 100% 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    cursor: pointer;
+}
+
+.weapon-video-btn:hover {
+    background: url(../img/video-btn-hover.png) no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.role-info-intro {
+    background: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 15px;
+    width: 460px;
+}
+
+.role-info-intro>div {
+    background: rgba(0, 36, 107, .6);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.role-info-intro .title {
+    font-size: 30px;
+    color: #62eaf5;
+    font-weight: bold;
+    transform: skew(-11deg);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.line {
+    position: absolute;
+    width: 97%;
+    bottom: -5px;
+    left: 12px;
+    height: 1px;
+    background: rgba(98, 234, 245, .2);
+}
+
+.line::before,
+.line::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 5px;
+    background: #62eaf5;
+    top: 0;
+}
+
+.line::before {
+    left: -7px;
+}
+
+.line::after {
+    right: -7px;
+}
+
+.title span:last-child {
+    color: rgba(255, 255, 255, .3);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.role-info-intro p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.role-action {
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    z-index: 9;
+}
+
+.role-action-btns {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.base-role-btn {
+    width: 147px;
+    height: 148px;
+    background: url(../img/role-btn.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    padding: 6px 1px 0 5px;
+    cursor: pointer;
+}
+
+.base-role-btn:hover,
+.base-role-btn.active {
+    background: url(../img/base-bg-hover.png) no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.imgbox {
+    position: relative;
+}
+
+.imgbox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/base-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.base-role-btn img {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.name {
+    padding-right: 40px;
+    transform: skew(-11deg);
+    line-height: 22px;
+    display: none;
+}
+
+.role-action-more {
+    text-align: right;
+}
+
+.role-action-more:hover a {
+    background: #fff;
+}
+
+.role-action-more a {
+    background: #fedf4c;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 4px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    width: 230px;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.contract {
+    height: 636px;
+    background: url(../img/contact-bg.jpg) center center no-repeat;
+    padding-top: 160px;
+    overflow: hidden
+}
+
+.contract-wrap {
+    width: 1246px;
+    height: 466px;
+    border: 2px solid #269ad1;
+    border-radius: 4px;
+    padding: 6px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contract-wrap-content {
+    background: #2e448f;
+    height: 100%;
+    padding: 40px 20px 0;
+
+}
+
+.social {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.media-icon {
+    display: flex;
+    font-size: 100px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: flex-start;
+}
+
+.media-icon li {
+    width: 0.85em;
+    height: 0.85em;
+    margin: 0 0.14em 0.1em;
+    cursor: pointer;
+}
+
+.media-icon li svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.contract-info {
+    display: flex;
+}
+
+.contract-list {
+    color: #fff;
+    width: 430px;
+    font-size: 12px;
+}
+
+.contract-list.qqgroup {
+    margin-left: 10px;
+    min-height: 0px;
+}
+
+.contract-list .title {
+    font-size: 20px;
+    transform: skew(-15deg);
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.contract-list .title::after {
+    content: "";
+    position: absolute;
+    background: #2070be;
+    height: 2px;
+    width: 290px;
+    left: 115px;
+    top: 50%;
+}
+
+.contract-list:last-child .title::after {
+    left: 130px;
+}
+
+/* .contract-content {
+
+} */
+.contract-content p {
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
+
+.contract-content p:nth-child(6) {
+    min-height: 1.5em;
+}
+
+.contract-img {
+    position: absolute;
+    right: -372px;
+    bottom: -82px;
+    pointer-events: none;
+}
+
+.page-mobie {
+    display: none;
+}
+
+/* mobie */
+
+@media screen and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+        font-size: 54.9333px;
+
+    }
+    .page {
+        display: none;
+    }
+
+    .page-mobie {
+        display: block;
+    }
+
+    .mobie-banner {
+        display: block;
+        width: 100%;
+        height: 10.23em;
+        position: relative;
+        background: url(../img/bg-home-mobie.jpg) no-repeat;
+        background-size: 100%;
+    }
+
+    .pv-btn {
+        position: absolute;
+        bottom: 1.34em;
+        left: 50%;
+        margin-left: -1.8em;
+        width: 3.41em;
+        height: 1.67em;
+        background: url(../img/btn_play_mobie.png) 50% no-repeat;
+        background-size: cover;
+    }
+
+    .pv-btn::after {
+        content: "";
+        position: absolute;
+        left: 1.04em;
+        top: 1.02em;
+        width: 0.26em;
+        height: 0.3em;
+        background: url(../img/dots-mobie.png) 50% no-repeat;
+        background-size: cover;
+        transform-origin: -0.22em -0.22em;
+        animation: circle 5s linear infinite both;
+    }
+
+    @keyframes circle {
+        0% {
+            transform: rotate(0deg)
+        }
+
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+
+    .download-btn-mobie {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0.45em;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0.36em;
+    }
+
+    .download-btn-mobie a {
+        width: 3.3em;
+        height: 0.82em;
+        display: block;
+    }
+
+    .download-btn-mobie a img {
+        width: 100%;
+    }
+
+    /* ...news-mobie... */
+    .news-mobie {
+        background: url(../img/homenewsbg-mobie.jpg) top no-repeat;
+        background-size: 100%;
+        padding-bottom: 0.45em;
+        height: 12.63em;
+    }
+    .title-mobie {
+        font-size: 32.96px;
+        font-weight: bold;
+        color: #9c9c9c;
+        text-align: center;
+        padding: 38.4533px 0 27px;
+        line-height: 1;
+    }
+    .title-mobie span:first-child {
+        color: #fff;
+    }
+    .title-mobie span:last-child {
+        display: inline-block;
+        transform: skew(-11deg);
+        font-size: 21.9733px;
+        margin-left: -0.15em;
+    }
+    .news-swiper {
+        width: 390.5px;
+        height: 177.65px;
+        margin: 0 auto 7.7px;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 177.65px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        
+    }
+    .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        box-sizing: content-box;
+    }
+    .swiper-slide {
+        height: 172.15px;
+        border-radius: 2.75px;
+        overflow: hidden;
+        border: 1px solid #3dc5eb;
+    }
+    .news-swiper-item img {
+        display: block;
+        width: 390.5px;
+        height: 172.15px;
+    }
+
+    .home-news-list {
+        background: rgba(255,255,255,.1);
+        border: 1px solid rgba(255,255,255,.2);
+        border-radius: 2.75px;
+        width: 390.5px;
+        margin: 0 auto;
+        padding: 13.2px 0;
+        box-shadow: 0 2px 10px 0 rgb(1 1 1 / 30%);
+    }
+    .cates {
+        font-size: 14.3px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 16.5px
+    }
+    .cates .cate {
+        width: 88px;
+        height: 27.5px;
+        line-height: 27.5px;
+        border-radius: 6.6px;
+        text-align: center;
+        margin-right: 5.5px;
+
+    }
+    .home-news-content {
+        font-size: 14.3px;
+        width: 352px;
+        max-height: 176px;
+        overflow: hidden;
+        margin: 0 auto 13.75px;
+    }
+    .more, .more-btn {
+        width: 264px;
+        height: 40.7px;
+        line-height: 40.7px;
+        background: #fedf4c;
+        border-radius: 2.75px;
+        margin: 0 auto;
+        font-size: 18.7px;
+        font-weight: bold;
+        color: #000;
+        text-align: center
+    }
+    .role-mobie {  
+        background: url(../img/role-mobie-bg.jpg) top no-repeat;
+        color: #fff;
+        background-size: 100%;
+        position: relative;
+    }
+    .role-content-mobie {
+        padding-top: 11px;
+        font-size: 14.3px;
+        padding-bottom: 22px;
+    }
+    .name-mobie {
+        text-align: right;
+        transform: skew(-11deg);
+        font-size: 33px;
+        font-weight: bold;
+        padding-right: 27.5px;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+    }
+    .name-mobie span:last-child {
+        font-size: 19.8px;
+        color: #62eaf5;
+    }
+    .big-img-mobie {
+        width: 588.5px;
+        margin-left: -55px;
+        margin-top: -33px;
+        height: 467.5px;
+    }
+    .big-img-mobie img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+    .video-mobie {
+        position: relative;
+        margin-bottom: 11px;
+        height: 192.5px;
+    }
+    .video-mobie img {
+        display: block;
+        width: 375.5px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+    .video-btn {
+        position: absolute;
+        width: 62.15px;
+        height: 92.4px;
+        background: url(../img/video-btn.png) no-repeat;
+        background-size: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        z-index: 2;
+    }
+    .video-mobie::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 27.5px;
+        width: 100%;
+        height: 137.5px;
+        background: #001b44;
+    }
+
+    .info {
+        padding-left: 38.5px;
+        line-height: 27.5px;
+        margin: 11px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .info span {
+        font-size: 14.3px;
+    }
+    .intro {
+        width: 388.85px;
+        border-radius: 5.5px;
+        background: rgba(255,255,255,.1);
+        margin: 0 auto;
+        padding: 4.4px;
+        margin-bottom: 22px;
+    }
+    .intro-wrap {
+        background: rgba(0,36,107,.6);
+        border-radius: 5.5px;
+        padding: 16.5px;
+    }
+    .title-mb {
+        transform: skew(-11deg);
+        position: relative;
+        padding-bottom: 5.5px;
+        margin-bottom: 19.25px;
+        font-size: 13.2px;
+        color: rgba(255,255,255,.3);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .title-mb span:first-child {
+        font-size: 24.2px;
+        font-weight: bold;
+        color: #62eaf5;
+    }
+    .base-line {
+        position: absolute;
+        width: calc(100% - 14px);
+        bottom: -5px;
+        left: 12px;
+        height: 1px;
+        background: rgba(98,234,245,.2);
+    }
+    .base-line::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 5px;
+        background: #62eaf5;
+        top: 0;
+        left: -7px;
+    }
+    .base-line::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 5px;
+        background: #62eaf5;
+        top: 0;
+        right: -7px;
+    }
+    .intro p {
+        line-height: 27.5px;
+    }
+    .more-btn-mobie {
+        width: 264px;
+        height: 40.7px;
+        background: #fedf4c;
+        text-align: center;
+        line-height: 40.7px;
+        border-radius: 2.75px;
+        font-size: 18.7px;
+        font-weight: bold;
+        color: #000;
+        margin: 0 auto;
+    }
+    .role-action-mobie {
+        position: sticky;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 99;
+    }
+    .arrow-btn {
+        border-bottom: 5.5px solid #fedf4c;
+    }
+
+
+}
